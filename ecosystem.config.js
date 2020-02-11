@@ -20,7 +20,7 @@ module.exports = {
   deploy : {
     production : {
       user : 'ubuntu',
-      host : '13.127.160.27',
+      host : '52.66.200.233',
       ref  : 'origin/master',
       repo : 'git@github.com:visshnu-78/Jabong.git',
       path : '/var/www/production',
