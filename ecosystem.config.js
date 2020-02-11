@@ -24,7 +24,7 @@ module.exports = {
       ref  : 'origin/master',
       repo : 'git@github.com:visshnu-78/Jabong.git',
       path : '/var/www/production',
-      'post-deploy' : 'npm install && npm run build && pm2 reload ecosystem.config.js --env production'
+      'post-deploy' : 'cd current && npm install && npm run build && pm2 reload ecosystem.config.js --env production'
     }
   }
 };
