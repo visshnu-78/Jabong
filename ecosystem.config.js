@@ -19,12 +19,12 @@ module.exports = {
 
   deploy : {
     production : {
-      user : 'node',
-      host : '212.83.163.1',
+      user : 'ubuntu',
+      host : '13.127.160.27',
       ref  : 'origin/master',
-      repo : 'git@github.com:repo.git',
+      repo : 'git@github.com:visshnu-78/Jabong.git',
       path : '/var/www/production',
-      'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env production'
+      'post-deploy' : 'sudo npm install && pm2 reload ecosystem.config.js --env production'
     }
   }
 };
