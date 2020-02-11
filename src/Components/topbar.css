@@ -1,0 +1,13 @@
+.top-bar {
+    text-align:right;
+    border-bottom: 1px solid gray;
+    padding: 5px 0px;
+}
+.top {
+    color: grey;
+    font-size: 10px;
+    padding:0px 5px;
+}
+.top:hover {
+    cursor: pointer;
+}

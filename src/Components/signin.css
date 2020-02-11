@@ -1,0 +1,27 @@
+.signin-form {
+    padding: 10px;
+}
+h2 {
+    text-align: center;
+}
+
+#submit {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}  
+#submit:hover {
+    opacity: 0.8;
+}
+#username, #psw, #name, #email, #role {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }

@@ -1,0 +1,19 @@
+.top1 {
+    width: 25%;
+    float: left;
+    margin-top: 20px;
+    text-align: center;
+}
+.card {
+    width: 60%;
+    border: 1px solid whitesmoke;
+    margin-left: 25%
+}
+.image {
+    height: 150px;
+    min-height: 150px
+}
+.fav {
+    vertical-align: top;
+    cursor: pointer;
+}

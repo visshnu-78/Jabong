@@ -1,0 +1,45 @@
+.ul-nav {
+    list-style: none;
+}
+.logo {
+    float: left;
+    
+}
+.navbar {
+    display: block;
+    float: left;
+    width: 100%;
+    /* position: absolute; */
+    border-bottom: 1px solid grey;
+}
+.input {
+    padding: 10px;
+    margin-top: 0;
+    vertical-align: text-bottom;
+    width: 250px;
+    border:none;
+    background-color: lightgray;
+    margin-top: -5px;
+}
+.li-nav {
+    float: left;
+    padding: 0px 5px;
+}
+.search {
+    padding: 5px;
+    vertical-align: text-bottom;
+    height: 41px;
+    width: 41px;
+    border: none;
+    background-color: lightgrey;
+    margin-top: -5px;
+}
+.images {
+    float: right;
+    margin-top: -5px;
+}
+.search-bar{
+    float: right;
+    padding-right: 10px;
+    border-right: 1px solid gray;
+}

@@ -1,0 +1,69 @@
+.footer {
+    /* float: left; */
+    background-color: whitesmoke;
+    padding: 0px 40px;
+}
+ul {
+    padding: 0;
+    list-style: none;
+}
+li {
+    float: none;
+    padding: 10px 0px;
+    font-size: 12px;
+}
+.policies {
+    text-align: left;
+    float: left;
+    padding-left: 30px;
+}
+.downloads {
+    float: left;
+    padding-right: 100px;
+    border-right: 1px solid lightgray;
+}
+.jabong {
+    float: left;
+    padding-left: 100px;
+    text-align: left;
+}
+.search-input {
+    padding: 10px;
+}
+.search-button {
+    padding: 10px;
+}
+.subscribe {
+    margin-top: 20px;
+    padding: 10px;
+}
+.news {
+    text-align: left
+}
+.imgs {
+    clear: both;
+    width: calc(100% - 80px);
+    padding-left: 100px;
+    padding: 40px;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+
+}
+.frst-img, .sec-img, .third-img {
+    padding: 20px 100px;
+}
+.brands {
+    clear: both;
+    text-align: left;
+    padding-left: 40px;
+    font-family: dinnextprolight,Helvetica Neue,Helvetica,Arial,sans-serif;
+    color:gray;
+}
+.li {
+    text-align: left;
+    font-family: dinnextprolight,Helvetica Neue,Helvetica,Arial,sans-serif;
+    color:gray;
+}
+.li p {
+    font-size: 14px;
+}
