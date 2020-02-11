@@ -23,7 +23,7 @@ module.exports = {
       host : '13.127.160.27',
       ref  : 'origin/master',
       repo : 'git@github.com:visshnu-78/Jabong.git',
-      path : '/var/www/production/current',
+      path : '/var/www/production',
       'post-deploy' : 'npm install && npm run build && pm2 reload ecosystem.config.js --env production'
     }
   }
