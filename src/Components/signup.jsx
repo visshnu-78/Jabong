@@ -50,7 +50,8 @@ class signup extends React.Component {
   }
   handleSubmit = (event) => {
     event.preventDefault();
-    fetch(URL+'/signup', {
+    console.log(this.URL)
+    fetch(this.URL+'/signup', {
         method: 'post',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({
