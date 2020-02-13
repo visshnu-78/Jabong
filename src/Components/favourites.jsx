@@ -10,7 +10,7 @@ class favourites extends Component {
             id: this.props.id
         }
     }
-    URL= process.env.NODE_ENV === "development"?"http:localhost:3001":"/backend"
+    URL= process.env.NODE_ENV === "development"?"http:localhost:3001":"/backend/"
     componentDidMount= async()=> {
         let fav = []
         console.log("id ",this.props.id)

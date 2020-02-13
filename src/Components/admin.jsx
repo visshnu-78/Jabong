@@ -20,7 +20,7 @@ class admin extends Component {
         }
     }
 
-    URL= process.env.NODE_ENV === "development"?"http:localhost:3001":"/backend"
+    URL= process.env.NODE_ENV === "development"?"http:localhost:3001":"/backend/"
 
     componentDidMount() {
         const tctype = []
