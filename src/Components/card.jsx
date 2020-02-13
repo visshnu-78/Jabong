@@ -11,7 +11,7 @@ export default class card extends Component {
             favourites: []
         }
     }
-    URL= process.env.NODE_ENV === "development"?"http:localhost:3001":"/backend/"
+    URL= process.env.NODE_ENV === "development"?"http:localhost:3001":"/backend"
     componentDidMount() {
         console.log(this.props.data)
     }
