@@ -96,6 +96,7 @@ class admin extends Component {
         event.preventDefault()
         const temp = this.state.form.getFieldsValue()  
         await this.imageUpload()
+        console.log(`${this.URL}/uploads/${this.state.filename}`)
         fetch(this.URL+"/submit", {
             method: 'post',
             headers: {
@@ -103,7 +104,7 @@ class admin extends Component {
             },
             body: JSON.stringify({
                 value: temp,
-                file: this.URL+`/uploads/${this.state.filename}` 
+                file: `${this.URL}/uploads/${this.state.filename}` 
             })
         })
         alert("Product added successfully")
