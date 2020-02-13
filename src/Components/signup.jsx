@@ -34,7 +34,7 @@ class signup extends React.Component {
     this.afterOpenModal = this.afterOpenModal.bind(this);
     this.closeModal = this.closeModal.bind(this);
   }
- 
+  URL= process.env.NODE_ENV === "development"?"http:localhost:3001":"/backend"
   openModal() {
     this.setState({modalIsOpen: true});
   }
@@ -50,7 +50,7 @@ class signup extends React.Component {
   }
   handleSubmit = (event) => {
     event.preventDefault();
-    fetch('http://localhost:3001/', {
+    fetch(URL+'/', {
         method: 'post',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({

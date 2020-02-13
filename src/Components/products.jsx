@@ -13,10 +13,10 @@ class products extends Component {
             id: ''
         }
     }
-
+    URL= process.env.NODE_ENV === "development"?"http:localhost:3001":"/backend"
     componentDidMount = () => {
         var token = JSON.parse(localStorage.getItem("token"))
-        fetch("http://localhost:3001/check", {
+        fetch(this.URL+"/check", {
             method: 'post',
             headers : {
                 'Content-Type' : 'application/json'
@@ -40,7 +40,7 @@ class products extends Component {
 
     getClothing =  async() => {
         var clothingData = []
-        await fetch("http://localhost:3001/getClothing", {
+        await fetch(this.URL+"/getClothing", {
             method: 'get'
         })
         .then(data=> data.json())
@@ -64,7 +64,7 @@ class products extends Component {
     }
     getWatches = async() => {
         var watchData = []
-        await fetch("http://localhost:3001/getWatches", {
+        await fetch(this.URL+"/getWatches", {
             method: 'get'
         })
         .then(data=> data.json())

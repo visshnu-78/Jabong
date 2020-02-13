@@ -14,13 +14,14 @@ class topbar extends Component {
             isSignedIn: false
         }
     }
+    URL= process.env.NODE_ENV === "development"?"http:localhost:3001":"/backend"
     displayModel = (variable) => {
         var temp = this.state[variable];
         this.setState({[variable]:!temp})
     }
     componentDidMount() {
         var token = JSON.parse(localStorage.getItem("token"))
-        fetch("http://localhost:3001/check", {
+        fetch(this.URL+"/check", {
             method: 'post',
             headers : {
                 'Content-Type' : 'application/json'

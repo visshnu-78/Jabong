@@ -11,6 +11,7 @@ export default class card extends Component {
             favourites: []
         }
     }
+    URL= process.env.NODE_ENV === "development"?"http:localhost:3001":"/backend"
     componentDidMount() {
         console.log(this.props.data)
     }
@@ -23,7 +24,7 @@ export default class card extends Component {
             console.log(this.props.data[this.props.index])
             fav.push(this.props.data[this.props.index])
             this.setState({favourites:fav})
-            fetch("http://localhost:3001/fav",{
+            fetch(this.URL+"/fav",{
                 method:'post',
                 headers: {
                     'Content-Type': 'application/json'

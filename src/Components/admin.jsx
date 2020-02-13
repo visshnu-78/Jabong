@@ -20,11 +20,13 @@ class admin extends Component {
         }
     }
 
+    URL= process.env.NODE_ENV === "development"?"http:localhost:3001":"/backend"
+
     componentDidMount() {
         const tctype = []
         const twtype = []
         const tgen = [] 
-        fetch("http://localhost:3001/ctype", {
+        fetch(this.URL+`/ctype`, {
             method: 'get'
         }).then(data => data.json())
             .then(data =>
@@ -38,7 +40,7 @@ class admin extends Component {
         this.setState({ ctype: tctype })
 
 
-        fetch("http://localhost:3001/wtype", {
+        fetch(this.URL+"/wtype", {
             method: 'get'
         }).then(data => data.json())
             .then(data =>
@@ -52,7 +54,7 @@ class admin extends Component {
 
 
         let outer = []
-        fetch("http://localhost:3001/gender", {
+        fetch(this.URL+"/gender", {
             method: 'get'
         }).then(data => data.json())
             .then(data => {
@@ -71,7 +73,7 @@ class admin extends Component {
         var name = ""
         var formData = new FormData()
         formData.append('profile',this.state.image)
-        await axios.post("http://localhost:3001/profile", formData, {
+        await axios.post(this.URL+"/profile", formData, {
             headers: {
             'Content-Type': 'multipart/form-data',
             }
@@ -93,14 +95,14 @@ class admin extends Component {
         event.preventDefault()
         const temp = this.state.form.getFieldsValue()  
         await this.imageUpload()
-        fetch("http://localhost:3001/submit", {
+        fetch(this.URL+"/submit", {
             method: 'post',
             headers: {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({
                 value: temp,
-                file: `http://localhost:3001/uploads/${this.state.filename}` 
+                file: this.URL+`/${this.state.filename}` 
             })
         })
         alert("Product added successfully")

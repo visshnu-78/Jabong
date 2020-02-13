@@ -10,10 +10,11 @@ class favourites extends Component {
             id: this.props.id
         }
     }
+    URL= process.env.NODE_ENV === "development"?"http:localhost:3001":"/backend"
     componentDidMount= async()=> {
         let fav = []
         console.log("id ",this.props.id)
-        await fetch(`http://localhost:3001/getfav/${this.state.id}`, {
+        await fetch(this.URL+`/getfav/${this.state.id}`, {
             method: 'get',
         }).then(data => data.json())
         .then(data => {
