@@ -103,7 +103,7 @@ class admin extends Component {
             },
             body: JSON.stringify({
                 value: temp,
-                file: this.URL+`/${this.state.filename}` 
+                file: this.URL+`/uploads/${this.state.filename}` 
             })
         })
         alert("Product added successfully")
