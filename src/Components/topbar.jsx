@@ -20,6 +20,7 @@ class topbar extends Component {
         this.setState({[variable]:!temp})
     }
     componentDidMount() {
+        console.log(this.URL)
         var token = JSON.parse(localStorage.getItem("token"))
         fetch(this.URL+"/check", {
             method: 'post',

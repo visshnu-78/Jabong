@@ -26,6 +26,7 @@ class admin extends Component {
         const tctype = []
         const twtype = []
         const tgen = [] 
+        
         fetch(this.URL+`/ctype`, {
             method: 'get'
         }).then(data => data.json())
