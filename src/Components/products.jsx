@@ -13,7 +13,7 @@ class products extends Component {
             id: ''
         }
     }
-    URL= process.env.NODE_ENV === "development"?"http:localhost:3001":"/backend"
+    URL= process.env.NODE_ENV === "development"?"http://localhost:3001":"/backend"
     componentDidMount = () => {
         var token = JSON.parse(localStorage.getItem("token"))
         fetch(this.URL+"/check", {

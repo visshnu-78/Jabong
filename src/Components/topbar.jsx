@@ -14,7 +14,7 @@ class topbar extends Component {
             isSignedIn: false
         }
     }
-    URL= process.env.NODE_ENV === "development"?"http:localhost:3001":"/backend"
+    URL= process.env.NODE_ENV === "development"?"http://localhost:3001":"/backend"
     displayModel = (variable) => {
         var temp = this.state[variable];
         this.setState({[variable]:!temp})

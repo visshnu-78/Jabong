@@ -30,7 +30,7 @@ class signin extends React.Component {
     this.afterOpenModal = this.afterOpenModal.bind(this);
     this.closeModal = this.closeModal.bind(this);
   }
-  URL= process.env.NODE_ENV === "development"?"http:localhost:3001":"/backend"
+  URL= process.env.NODE_ENV === "development"?"http://localhost:3001":"/backend"
  
   openModal() {
     this.setState({modalIsOpen: true});
