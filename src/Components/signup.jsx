@@ -26,7 +26,7 @@ class signup extends React.Component {
       username: "",
       email: "",
       password: "",
-      role: "Admin"
+      role: "User"
     };
     
  
